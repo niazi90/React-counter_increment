@@ -9,9 +9,17 @@ function App() {
   return (
     <>
     <p>{count}</p>
-      <Button onClick={()=>{
+      <Button title={"increment"} onClick={()=>{
         setCount(count+1);
       }}/>
+      <Button title={"decremenet"} onClick={()=>{
+        setCount(count-1);
+      }} />
+      <Button title={"Reset"} onClick={()=>{
+        setCount(0);
+      }} />
+     
+     
     </>
   )
 }
